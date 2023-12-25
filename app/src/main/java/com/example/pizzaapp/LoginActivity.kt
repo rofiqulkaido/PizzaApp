@@ -31,14 +31,11 @@ class LoginActivity : AppCompatActivity() {
             val dbHelper = DatabaseHelper(this)
 
             //check data
-            val data: String = dbHelper.checkData("stevi.ema@amikom.ac.id")
-            Toast.makeText(this@LoginActivity, "Result : " + data, Toast.LENGTH_SHORT).show()
+            val data: String = dbHelper.checkData("")
+            Toast.makeText(this@LoginActivity, "Welcome", Toast.LENGTH_SHORT).show()
             if (data == "") {
-                //insert data
-                dbHelper.addAccount("stevi.ema@amikom.ac.id", "Stevi Ema W", "Cashier", "12345")
+
             }
-            val email = txtUsername.text.toString().trim()
-            val password = txtPassword.text.toString().trim()
 
             //check login
             val result: Boolean =

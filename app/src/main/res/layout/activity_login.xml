@@ -83,7 +83,7 @@
         android:id="@+id/dontHave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="don't have an account?"
+        android:text="Register Here"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
